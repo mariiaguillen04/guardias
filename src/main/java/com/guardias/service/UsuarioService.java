@@ -23,13 +23,20 @@ public class UsuarioService {
     }
 
     public Optional<Usuario> findById(int idUsuario){
-        return this.usuarioRepository.findById(idUsuario);
+
+        if(existUsuario(idUsuario)){
+            return this.usuarioRepository.findById(idUsuario);
+        }else{
+            throw  new IllegalArgumentException("Usuario con id" + idUsuario + " no encontrado");
+        }
+
     }
 
     public Usuario create(Usuario usuario){
         return this.usuarioRepository.save(usuario);
     }
 
+    //Cambiar el update como el de rolService
     public Usuario update(Usuario usuario){
         return this.usuarioRepository.save(usuario);
     }

@@ -25,7 +25,8 @@ public class Rol {
 	@Column(name = "id_usuario")
 	private int idUsuario;
 
-	@OneToMany(mappedBy = "rol", orphanRemoval = true)
+	@ManyToOne
+	@JoinColumn(name = "id_usuario", referencedColumnName = "id")
 	@JsonIgnore
 	private Usuario usuario;
 

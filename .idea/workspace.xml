@@ -5,32 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cf98237-77ff-412e-9f60-11418823eda3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/FaltaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/TramoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/UsuarioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/FaltaMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/TramoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/UsuarioMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/RolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/AnexoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/FaltaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/RolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/TramoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Asignacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Horario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/AsignacionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/HorarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/AsignacionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/EntradaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/HorarioService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/TareaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/enums/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/enums/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/TareaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/FaltaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/AnexoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/AnexoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/RolService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,24 +51,27 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2s2YpMa7t454DDulCzH255PSPTl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.guardias [clean].executor": "Run",
-    "Maven.guardias [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.guardias [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.guardias [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Mi unidad\2ºDAW\workspace\guardias" />
@@ -93,5 +87,8 @@
       <updated>1737655318331</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="docker-compose.yaml" />
   </component>
 </project>
