@@ -27,7 +27,11 @@ public class Falta {
     @Column(columnDefinition = "VARCHAR(255)", nullable = false)
     private String tarea;
     
-    @OneToMany(mappedBy = "usuario")
-    private List<Usuario> usuario;
+    @ManyToOne
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
+    private Usuario usuario;
+
+    @OneToMany(mappedBy = "falta", orphanRemoval = true)
+    private List<Tramo> tramos;
 
 }

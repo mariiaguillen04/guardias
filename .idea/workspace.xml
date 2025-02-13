@@ -4,7 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cf98237-77ff-412e-9f60-11418823eda3" name="Changes" comment="" />
+    <list default="true" id="4cf98237-77ff-412e-9f60-11418823eda3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/FaltaDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/TramoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/UsuarioDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/FaltaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/TramoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/UsuarioMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Asignacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Horario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/AsignacionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/HorarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/AsignacionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/EntradaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/HorarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/TareaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +45,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -39,9 +69,13 @@
     "Maven.guardias [clean].executor": "Run",
     "Maven.guardias [install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/Mi unidad/2ºDAW/workspace/pizza",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
   <component name="RecentsManager">

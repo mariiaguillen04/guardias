@@ -1,4 +1,4 @@
 package com.guardias.service;
 
-public class AsignacionService {
+public class FaltaService {
 }

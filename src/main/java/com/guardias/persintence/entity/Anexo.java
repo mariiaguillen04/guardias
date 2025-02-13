@@ -30,7 +30,7 @@ public class Anexo {
     @Column(name="fecha_ausencia", columnDefinition = "DATE", nullable = false)
     private LocalDate fechaAusencia;
 
-    @Column(columnDefinition = "VARCHAR(2050")
+    @Column(columnDefinition = "VARCHAR(2050)")
     private String justificante;
 
     @OneToMany(mappedBy = "anexo")

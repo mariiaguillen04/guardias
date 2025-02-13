@@ -21,8 +21,8 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(columnDefinition = "VARCHAR(100)", nullable = false, unique = true)
-    private String nombre_usuario;
+    @Column(name = "nombre_usuario",columnDefinition = "VARCHAR(100)", nullable = false, unique = true)
+    private String nombreUsuario;
 
     @Column(columnDefinition = "VARCHAR(100)", nullable = false, unique = true)
     private String password;

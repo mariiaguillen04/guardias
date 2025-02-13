@@ -28,7 +28,7 @@ public class Tramo {
     @Enumerated(EnumType.STRING)
     private Hora hora;
     
-    @Column(name="fecha_entrada")
+    @Column(name="fecha", columnDefinition = "DATE")
     private LocalDate fecha;
 
     @Column(columnDefinition = "VARCHAR(20)")
@@ -40,5 +40,9 @@ public class Tramo {
     @ManyToOne
     @JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
     private Usuario usuarios;
+
+    @ManyToOne
+    @JoinColumn(name = "id_falta", referencedColumnName = "id", insertable = false, updatable = false)
+    private Falta falta;
 
 }
