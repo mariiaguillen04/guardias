@@ -3,22 +3,28 @@ package com.guardias.service;
 
 import com.guardias.persintence.entity.Falta;
 import com.guardias.persintence.repository.FaltaRepository;
+import com.guardias.service.dto.FaltaDTO;
+import com.guardias.service.mappers.FaltaMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class FaltaService {
     @Autowired
     private FaltaRepository faltaRepository;
 
+    @Autowired
+    private FaltaMapper faltaMapper;
+
     //Existe Falta
     public boolean existsFalta(int idFalta){return this.faltaRepository.existsById(idFalta);}
 
     //Encontrar todos los anexos
-    public List<Falta> findAll(){return this.faltaRepository.findAll();}
+    public List<FaltaDTO> findAll(){return this.faltaRepository.findAll().stream().map(faltaMapper::toDTO).collect(Collectors.toList());}
 
     //Encontrar Falta por Id
     public Optional<Falta> findById(int idFalta){

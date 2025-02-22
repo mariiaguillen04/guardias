@@ -4,6 +4,7 @@ import com.guardias.persintence.entity.Rol;
 import com.guardias.persintence.entity.Tramo;
 import com.guardias.service.RolService;
 import com.guardias.service.TramoService;
+import com.guardias.service.dto.TramoDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,14 +20,14 @@ public class TramoController {
 
     //Recurso listado de todos los tramos
     @GetMapping
-    public ResponseEntity<List<Tramo>> getTramos(){return ResponseEntity.ok(this.tramoService.findAll());}
+    public ResponseEntity<List<TramoDTO>> getTramos(){return ResponseEntity.ok(this.tramoService.findAll());}
 
     //Recurso que devuelve un Tramo por id
     @GetMapping("/{idTramo}")
     public ResponseEntity<Tramo> getTramoById(@PathVariable int idTramo){
-        Optional<Tramo> tramo = this.tramoService.findById(idTramo);
-        if(tramo.isPresent()){
-            return ResponseEntity.ok(tramo.get());
+        Tramo tramo = this.tramoService.findById(idTramo);
+        if(tramoService.existsTramo(idTramo)){
+            return ResponseEntity.ok(tramo);
         }
         return ResponseEntity.notFound().build();
     }

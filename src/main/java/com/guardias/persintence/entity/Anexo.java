@@ -15,7 +15,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Getter
 @Setter
 @NoArgsConstructor
-
 public class Anexo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,7 +32,7 @@ public class Anexo {
     @Column(columnDefinition = "VARCHAR(2050)")
     private String justificante;
 
-    @OneToMany(mappedBy = "anexo")
+    @OneToOne(mappedBy = "anexo", fetch = FetchType.LAZY)
     @JsonIgnore
-    private List<Usuario> usuarios;
+    private Usuario usuario;
 }

@@ -27,7 +27,11 @@ public class UsuarioMapper {
         dto.setId(usuario.getId());
         dto.setNombreUsuario(usuario.getNombreUsuario());
         dto.setEmail(usuario.getEmail());
-        dto.setRol(usuario.getRol());
+        dto.setRol(usuario.getRoles());
+
+        if (usuario.getTramo() != null) {
+            dto.setTramo(usuario.getTramo()); // Mapea la lista de tramos
+        }
 
         List<TramoDTO> tramos = new ArrayList<TramoDTO>();
         for(Tramo t: usuario.getTramo()){
@@ -48,7 +52,7 @@ public class UsuarioMapper {
         usuario.setId(usuarioDTO.getId());
         usuario.setNombreUsuario(usuarioDTO.getNombreUsuario());
         usuario.setEmail(usuarioDTO.getEmail());
-        usuario.setRol(usuarioDTO.getRol());
+        usuario.setRoles(usuarioDTO.getRol());
         usuario.setTramo(usuarioDTO.getTramo());
         usuario.setTramo(usuarioDTO.getTramo());
         usuario.setFalta(usuarioDTO.getFalta());

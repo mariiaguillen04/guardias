@@ -21,13 +21,13 @@ public class Tramo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario",nullable = false,unique = true)
+    @Column(name="id_usuario", insertable = false, updatable = false)
     private int idUsuario;
 
-    @Column(columnDefinition = "VARCHAR(100)")
     @Enumerated(EnumType.STRING)
+    @Column(columnDefinition = "VARCHAR(100)")
     private Hora hora;
-    
+
     @Column(name="fecha", columnDefinition = "DATE")
     private LocalDate fecha;
 
@@ -36,13 +36,12 @@ public class Tramo {
 
     @Column(columnDefinition = "VARCHAR(50)")
     private String aula;
-    
-    @ManyToOne
-    @JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id")
     private Usuario usuarios;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_falta", referencedColumnName = "id", insertable = false, updatable = false)
     private Falta falta;
-
 }

@@ -1,6 +1,7 @@
 package com.guardias.service.dto;
 
 import com.guardias.persintence.entity.Falta;
+import com.guardias.persintence.entity.Rol;
 import com.guardias.persintence.entity.Tramo;
 import com.guardias.persintence.entity.enums.Roles;
 import lombok.Getter;
@@ -17,7 +18,7 @@ public class UsuarioDTO {
     private int id;
     private String nombreUsuario;
     private String email;
-    private List<Roles> rol;
+    private List<Rol> rol;
     private List<Tramo> tramo;
     private List<Falta> falta;
 }

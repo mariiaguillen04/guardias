@@ -1,8 +1,6 @@
 package com.guardias.persintence.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.guardias.persintence.entity.enums.Roles;
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,20 +12,16 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Rol {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
+
 	@Enumerated(EnumType.STRING)
-	private Roles rol;
+	@Column(name = "rol", nullable = false)
+	private Roles nombreRol;
 
-	@Column(name = "id_usuario")
-	private int idUsuario;
-
-	@ManyToOne
-	@JoinColumn(name = "id_usuario", referencedColumnName = "id")
-	@JsonIgnore
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
 	private Usuario usuario;
-
 }

@@ -3,6 +3,7 @@ package com.guardias.web.controllers;
 import com.guardias.persintence.entity.Anexo;
 import com.guardias.persintence.entity.Falta;
 import com.guardias.service.FaltaService;
+import com.guardias.service.dto.FaltaDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +19,7 @@ public class FaltaController {
 
     //Recurso listado de todos las faltas
     @GetMapping
-    public ResponseEntity<List<Falta>> getFaltas(){return ResponseEntity.ok(this.faltaService.findAll());}
+    public ResponseEntity<List<FaltaDTO>> getFaltas(){return ResponseEntity.ok(this.faltaService.findAll());}
 
     //Recurso que devuelve un Falta por id
     @GetMapping("/{idFalta}")

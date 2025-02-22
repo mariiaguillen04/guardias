@@ -25,24 +25,24 @@ public class UsuarioController {
     private UsuarioMapper usuarioMapper;
 
     @GetMapping
-    public ResponseEntity<List<UsuarioDTO>> getUsuarios(){
-        return ResponseEntity.ok(this.usuarioService.findAll()
-                .stream().map(usuario -> new UsuarioDTO()).collect(Collectors.toList()));
+    public ResponseEntity<List<UsuarioDTO>> getUsuarios() {
+        return ResponseEntity.ok(this.usuarioService.findAll());
     }
+
 
     @GetMapping("/{idUsuario}")
     public ResponseEntity<UsuarioDTO> getUsuarioById(@PathVariable int idUsuario){
 
-        Optional<Usuario> usuario = this.usuarioService.findById(idUsuario);
+        Usuario usuario = this.usuarioService.findById(idUsuario);
         if(this.usuarioService.existUsuario(idUsuario)){
-            return ResponseEntity.ok(usuarioMapper.toDTO(usuario.get()));
+            return ResponseEntity.ok(usuarioMapper.toDTO(usuario));
         }
        return ResponseEntity.notFound().build();
     }
 
     @PostMapping
     public ResponseEntity<Usuario> createUsuario(@RequestBody Usuario usuario){
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(this.usuarioService.create(usuario));
     }
 
     @PutMapping("/{idUsuario}")

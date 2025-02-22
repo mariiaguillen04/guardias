@@ -3,6 +3,7 @@ package com.guardias.web.controllers;
 import com.guardias.persintence.entity.Rol;
 ;
 import com.guardias.service.RolService;
+import com.guardias.service.dto.RolDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,14 +19,14 @@ public class RolController {
 
     //Recurso listado de todos los roles
     @GetMapping
-    public ResponseEntity<List<Rol>> getRoles(){return ResponseEntity.ok(this.rolService.findAll());}
+    public ResponseEntity<List<RolDTO>> getRoles(){return ResponseEntity.ok(this.rolService.findAll());}
 
     //Recurso que devuelve un Rol por id
     @GetMapping("/{idRol}")
     public ResponseEntity<Rol> getRolById(@PathVariable int idRol){
-        Optional<Rol> rol = this.rolService.findById(idRol);
-        if(rol.isPresent()){
-            return ResponseEntity.ok(rol.get());
+        Rol rol = this.rolService.findById(idRol);
+        if(rolService.existsRol(idRol)){
+            return ResponseEntity.ok(rol);
         }
         return ResponseEntity.notFound().build();
     }

@@ -18,20 +18,19 @@ public class Falta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario",nullable = false,unique = true)
-    private int idUsuario;
+    @Column(name="id_usuario", insertable = false, updatable = false)
+    private Integer idUsuario;
 
     @Column(columnDefinition = "VARCHAR(200)", nullable = false)
     private LocalDate fecha;
 
     @Column(columnDefinition = "VARCHAR(255)", nullable = false)
     private String tarea;
-    
-    @ManyToOne
-    @JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id", nullable = false) // Relación con Usuario
     private Usuario usuario;
 
     @OneToMany(mappedBy = "falta", orphanRemoval = true)
     private List<Tramo> tramos;
-
 }

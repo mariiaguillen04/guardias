@@ -5,23 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cf98237-77ff-412e-9f60-11418823eda3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/RolRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/AnexoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/FaltaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/RolController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/TramoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/RolDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/RolMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Anexo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Falta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Rol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/enums/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/enums/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/TareaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/repository/FaltaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Tramo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/persintence/entity/Usuario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/AnexoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/AnexoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/FaltaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/RolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/RolService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/TramoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/UsuarioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/UsuarioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/UsuarioMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/FaltaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/FaltaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/RolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/RolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/TramoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/TramoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com/guardias/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/GuardiasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/GuardiasApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Anexo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Anexo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Falta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Falta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Rol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Rol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Tramo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Tramo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Dia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Dia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Hora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Hora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/AnexoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/AnexoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/TareaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/TramoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/TramoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/AnexoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/AnexoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/FaltaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/FaltaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/RolService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/RolService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/TramoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/TramoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/UsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/UsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/FaltaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/FaltaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/TramoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/TramoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/FaltaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/FaltaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/TramoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/TramoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/UsuarioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/mappers/UsuarioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2025-01-23T19-27-16_570.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2025-01-23T19-34-11_847.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2025-01-23T20-46-09_232.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.guardias.GuardiasApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.guardias.GuardiasApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.guardias.GuardiasApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.guardias.GuardiasApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/guardias/GuardiasApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/guardias/GuardiasApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +97,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.guardias [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.guardias [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GuardiasApplication.executor": "Run",
+    "Maven.guardias [clean].executor": "Run",
+    "Maven.guardias [install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Mi unidad\2ºDAW\workspace\guardias" />

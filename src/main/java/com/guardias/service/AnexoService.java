@@ -42,7 +42,6 @@ public class AnexoService {
         }else{
             throw new IllegalArgumentException("El anexo con id"+idAnexo+"no está registrado");
         }
-
     }
 
     //Eliminar Anexo
