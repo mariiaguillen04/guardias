@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name="tarea")
+@Table(name="falta")
 @Getter
 @Setter
 @NoArgsConstructor

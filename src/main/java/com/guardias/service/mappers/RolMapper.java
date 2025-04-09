@@ -3,6 +3,7 @@ package com.guardias.service.mappers;
 import com.guardias.persintence.entity.Rol;
 import com.guardias.persintence.entity.enums.Roles;
 import com.guardias.service.dto.RolDTO;
+import com.guardias.service.dto.UsuarioDTO;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,10 +13,16 @@ public class RolMapper {
         RolDTO dto = new RolDTO();
 
         dto.setId(rol.getId());
-        dto.setNombreRol(Roles.DIRECTORA.toString());
-        dto.setNombreRol(Roles.JEFAESTUDIOS.toString());
-        dto.setNombreRol(Roles.PROFESOR.toString());
-        dto.setNombreRol(Roles.SUBDIRECTORA.toString());
+        dto.setNombreRol(rol.getNombreRol().toString());
+
+
+        if (rol.getUsuario() != null) {
+            UsuarioDTO usuarioDTO = new UsuarioDTO();
+            usuarioDTO.setId(rol.getUsuario().getId());
+            usuarioDTO.setNombreUsuario(rol.getUsuario().getNombreUsuario());
+            usuarioDTO.setEmail(rol.getUsuario().getEmail());
+            dto.setUsuario(usuarioDTO);
+        }
 
         return dto;
     }

@@ -42,6 +42,6 @@ public class Tramo {
     private Usuario usuarios;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_falta", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "id_falta", referencedColumnName = "id")
     private Falta falta;
 }

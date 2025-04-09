@@ -1,5 +1,6 @@
 package com.guardias.service.dto;
 
+import com.guardias.persintence.entity.Rol;
 import com.guardias.persintence.entity.Usuario;
 import com.guardias.persintence.entity.enums.Hora;
 import jdk.jfr.Name;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -19,5 +21,5 @@ public class TramoDTO {
     private LocalDate fecha;
     private String curso;
     private String aula;
-    private Usuario usuarios;
+    private UsuarioDTO usuarios;
 }
