@@ -14,5 +14,5 @@ public class RolDTO {
 
     private int id;
     private String nombreRol;
-    private List<Usuario> usuario;
+    private UsuarioDTO usuario;
 }

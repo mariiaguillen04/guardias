@@ -45,7 +45,13 @@ public class RolService {
     // Crear un rol
     public Rol create(Rol rol) {
         // Verificar que el usuario asignado al rol exista
-        if (rol.getUsuario() == null || !usuarioRepository.existsById(rol.getUsuario().getId())) {
+        if (rol.getUsuario() == null) {
+            throw new IllegalArgumentException("El usuario es null");
+        }
+
+        System.out.println("Usuario id recibido: " + rol.getUsuario().getId());
+
+        if (rol.getUsuario().getId() == 0 || !usuarioRepository.existsById(rol.getUsuario().getId())) {
             throw new IllegalArgumentException("El usuario asociado al rol no existe");
         }
 
