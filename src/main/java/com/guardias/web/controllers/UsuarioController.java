@@ -25,7 +25,7 @@ public class UsuarioController {
     private UsuarioMapper usuarioMapper;
 
     @GetMapping
-    public ResponseEntity<List<UsuarioDTO>> getUsuarios() {
+    public ResponseEntity<List<Usuario>> getUsuarios() {
         return ResponseEntity.ok(this.usuarioService.findAll());
     }
 

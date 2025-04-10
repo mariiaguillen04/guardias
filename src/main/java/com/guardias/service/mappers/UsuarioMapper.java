@@ -41,21 +41,7 @@ public class UsuarioMapper {
             dto.setRoles(roles);
         }
 
-        // Convertir tramos a DTO
-        if (usuario.getTramo() != null) {
-            List<TramoDTO> tramos = usuario.getTramo().stream()
-                    .map(tramoMapper::toDTO)
-                    .collect(Collectors.toList());
-            dto.setTramos(tramos);
-        }
 
-        // Convertir faltas a DTO
-        if (usuario.getFalta() != null) {
-            List<FaltaDTO> faltas = usuario.getFalta().stream()
-                    .map(faltaMapper::toDTO)
-                    .collect(Collectors.toList());
-            dto.setFaltas(faltas);
-        }
 
         return dto;
     }

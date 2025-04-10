@@ -23,10 +23,8 @@ public class UsuarioService {
     private UsuarioMapper usuarioMapper;
 
     // Obtener todos los usuarios mapeados a DTO
-    public List<UsuarioDTO> findAll() {
-        return this.usuarioRepository.findAll().stream()
-                .map(usuarioMapper::toDTO) // Mapear correctamente el objeto usuario
-                .collect(Collectors.toList());
+    public List<Usuario> findAll() {
+        return this.usuarioRepository.findAll();
     }
 
     // Comprobar si existe un usuario por id
