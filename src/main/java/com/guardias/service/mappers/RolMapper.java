@@ -16,13 +16,7 @@ public class RolMapper {
         dto.setNombreRol(rol.getNombreRol().toString());
 
 
-        if (rol.getUsuario() != null) {
-            UsuarioDTO usuarioDTO = new UsuarioDTO();
-            usuarioDTO.setId(rol.getUsuario().getId());
-            usuarioDTO.setNombreUsuario(rol.getUsuario().getNombreUsuario());
-            usuarioDTO.setEmail(rol.getUsuario().getEmail());
-            dto.setUsuario(usuarioDTO);
-        }
+
 
         return dto;
     }

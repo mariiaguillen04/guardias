@@ -19,6 +19,5 @@ public class UsuarioDTO {
     private String nombreUsuario;
     private String email;
     private List<RolDTO> roles;
-    private List<TramoDTO> tramos;
-    private List<FaltaDTO> faltas;
+
 }
