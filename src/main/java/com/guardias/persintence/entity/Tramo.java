@@ -21,7 +21,7 @@ public class Tramo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario", insertable = false, updatable = false)
+    @Column(name="id_usuario", updatable = false)
     private int idUsuario;
 
     @Enumerated(EnumType.STRING)
