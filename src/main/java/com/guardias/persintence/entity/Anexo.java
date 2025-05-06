@@ -8,7 +8,6 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name="anexo")
@@ -20,9 +19,6 @@ public class Anexo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario", nullable = false, unique = true)
-    private int idUsuario;
-
     @Column(columnDefinition = "VARCHAR(200)")
     private String comentario;
 
@@ -32,7 +28,7 @@ public class Anexo {
     @Column(columnDefinition = "VARCHAR(2050)")
     private String justificante;
 
-    @OneToOne(mappedBy = "anexo", fetch = FetchType.LAZY)
-    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name="id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
     private Usuario usuario;
 }
