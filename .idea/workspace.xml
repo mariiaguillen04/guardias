@@ -60,7 +60,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.GuardiasApplication.executor": "Run",
@@ -75,7 +74,6 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Usuario/OneDrive/Desktop/guardias",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
-=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.GuardiasApplication.executor&quot;: &quot;Run&quot;,
@@ -89,7 +87,6 @@
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;G:/Mi unidad/2ºDAW/workspace/Daw-breackfast/daw-breakfast&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
->>>>>>> Stashed changes
   }
 }</component>
   <component name="RecentsManager">

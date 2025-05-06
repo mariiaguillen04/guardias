@@ -18,9 +18,6 @@ public class Falta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario", updatable = false)
-    private Integer idUsuario;
-
     @Column(columnDefinition = "VARCHAR(200)", nullable = false)
     private LocalDate fecha;
 

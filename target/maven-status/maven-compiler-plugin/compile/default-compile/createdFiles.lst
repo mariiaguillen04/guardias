@@ -1,6 +1,7 @@
 com\guardias\persintence\entity\Anexo.class
 com\guardias\persintence\repository\AnexoRepository.class
 com\guardias\persintence\entity\enums\Roles.class
+com\guardias\service\dto\RolDTO.class
 com\guardias\persintence\repository\UsuarioRepository.class
 com\guardias\service\UsuarioService.class
 com\guardias\web\controllers\AnexoController.class
@@ -19,6 +20,7 @@ com\guardias\GuardiasApplication.class
 com\guardias\service\FaltaService.class
 com\guardias\web\controllers\UsuarioController.class
 com\guardias\service\AnexoService.class
+com\guardias\service\mappers\RolMapper.class
 com\guardias\persintence\repository\FaltaRepository.class
 com\guardias\persintence\entity\enums\Dia.class
 com\guardias\persintence\entity\Usuario.class
