@@ -20,7 +20,6 @@ public class FaltaMapper {
 
         dto.setId(falta.getId());
         dto.setFecha(falta.getFecha());
-        dto.setIdUsuario(falta.getIdUsuario());
         dto.setTarea(falta.getTarea());
 
         dto.setUsuario(falta.getUsuario().getNombreUsuario());
