@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf9b6ae-d702-408d-a7e5-78b7fbeb78bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/AuthenticationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/AuthenticationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/web/controllers/AuthenticationController.java" afterDir="false" />
-    </list>
+    <list default="true" id="bdf9b6ae-d702-408d-a7e5-78b7fbeb78bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
