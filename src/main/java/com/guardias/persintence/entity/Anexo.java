@@ -32,7 +32,7 @@ public class Anexo {
     @Column(columnDefinition = "VARCHAR(2050)")
     private String justificante;
 
-    @OneToOne(mappedBy = "anexo", fetch = FetchType.LAZY)
-    @JsonIgnore
+    @ManyToOne
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
     private Usuario usuario;
 }
