@@ -1,4 +1,4 @@
-package es.KioskTV.serviceImpl;
+package com.guardias.service;
 
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
@@ -12,18 +12,10 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-
+import com.guardias.persintence.entity.Usuario;
+import com.guardias.persintence.repository.UsuarioRepository;
+import com.guardias.service.request.SigninRequest;
 import org.springframework.stereotype.Service;
-
-import es.KioskTV.Exceptions.UserExceptions.EmailConnectionException;
-import es.KioskTV.Repository.UserRepository;
-import es.KioskTV.entity.User;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.core.io.ClassPathResource;
@@ -35,13 +27,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import es.KioskTV.Repository.UserRepository;
-import es.KioskTV.entity.User;
-import es.KioskTV.entityDTO.JwtAuthenticationResponse;
-import es.KioskTV.request.SignUpRequest;
-import es.KioskTV.request.SigninRequest;
-import es.KioskTV.service.AuthenticationService;
-import es.KioskTV.service.JwtServicio;
+
 
 import org.springframework.util.StreamUtils;
 import java.io.IOException;
@@ -52,15 +38,15 @@ import java.io.IOException;
 @Service
 public class AuthenticationServiceImpl implements AuthenticationService {
 
-    private UserRepository userRepository;
+    private UsuarioRepository userRepository;
     private final PasswordEncoder passwordEncoder;
-    private final JwtServicio jwtService;
+    private final JwtServiceImpl jwtService;
     private final AuthenticationManager authenticationManager;
     private final Map<String, String> resetCodes = new ConcurrentHashMap<>();
 
-    public AuthenticationServiceImpl(UserRepository userRepository,
+    public AuthenticationServiceImpl(UsuarioRepository userRepository,
             @Lazy PasswordEncoder passwordEncoder,
-            JwtServicio jwtService,
+            JwtServiceImpl jwtService,
             AuthenticationManager authenticationManager) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
@@ -114,7 +100,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
 
-        User user = userRepository.findByDas(request.getDas())
+        Usuario user = userRepository.findById(request.getDas())
                 .orElseThrow(() -> new IllegalArgumentException("Invalid das or password."));
 
         String jwt = jwtService.generateToken(user);
@@ -139,7 +125,7 @@ public class AuthenticationServiceImpl implements AuthenticationService {
      */
     @Override
     public void sendPasswordChangeEmail(String das) throws EmailConnectionException {
-        User user = userRepository.findByDas(das).orElse(null);
+        Usuario user = userRepository.findByDas(das).orElse(null);
         if (user == null) {
             throw new IllegalArgumentException("DAS NOT FOUND");
         }

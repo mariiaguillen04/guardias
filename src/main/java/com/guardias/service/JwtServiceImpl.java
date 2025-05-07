@@ -1,4 +1,4 @@
-package es.KioskTV.serviceImpl;
+package com.guardias.service;
 
 import java.security.Key;
 import java.util.Date;
@@ -21,7 +21,7 @@ import io.jsonwebtoken.security.Keys;
  * Implementation of the JwtService interface providing JWT functionality.
  */
 @Service
-public class JwtServiceImpl implements JwtServicio {
+public class JwtServiceImpl  {
 
     /**
      * The secret key used for signing the JWT, retrieved from application
@@ -37,7 +37,6 @@ public class JwtServiceImpl implements JwtServicio {
      * @param token the JWT token
      * @return the username extracted from the token
      */
-    @Override
     public String extractUserName(String token) {
         return extractClaim(token, Claims::getSubject);
     }
@@ -48,7 +47,6 @@ public class JwtServiceImpl implements JwtServicio {
      * @param userDetails the user details
      * @return the generated JWT token
      */
-    @Override
     public String generateToken(UserDetails userDetails) {
         return generateToken(new HashMap<>(), userDetails);
     }
@@ -61,7 +59,6 @@ public class JwtServiceImpl implements JwtServicio {
      * @param userDetails the user details
      * @return true if the token is valid, false otherwise
      */
-    @Override
     public boolean isTokenValid(String token, UserDetails userDetails) {
         final String userName = extractUserName(token);
         return (userName.equals(userDetails.getUsername())) && !isTokenExpired(token);

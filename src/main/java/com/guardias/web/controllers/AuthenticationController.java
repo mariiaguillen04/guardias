@@ -1,8 +1,10 @@
-package es.KioskTV.auth;
+package com.guardias.web.controllers;
 
 import java.util.Map;
 import java.util.Optional;
 
+import com.guardias.persintence.repository.UsuarioRepository;
+import com.guardias.service.AuthenticationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,13 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.KioskTV.Exceptions.UserExceptions.EmailConnectionException;
-import es.KioskTV.Repository.UserRepository;
-import es.KioskTV.entity.User;
-import es.KioskTV.entityDTO.JwtAuthenticationResponse;
-import es.KioskTV.request.SignUpRequest;
-import es.KioskTV.request.SigninRequest;
-import es.KioskTV.service.AuthenticationService;
 
 /**
  * This class is a REST controller for handling authentication requests.
@@ -28,10 +23,10 @@ import es.KioskTV.service.AuthenticationService;
 @RequestMapping("/authenticate")
 public class AuthenticationController {
 
-    private final AuthenticationService authenticationService;
+    private final AuthenticationServiceImpl authenticationService;
 
     @Autowired
-    private UserRepository userRepository;
+    private UsuarioRepository userRepository;
 
     /**
      * Constructs an AuthenticationController with the specified
@@ -40,7 +35,7 @@ public class AuthenticationController {
      * @param authenticationService the service used for authentication operations
      */
     @Autowired
-    public AuthenticationController(AuthenticationService authenticationService) {
+    public AuthenticationController(AuthenticationServiceImpl authenticationService) {
         this.authenticationService = authenticationService;
     }
 

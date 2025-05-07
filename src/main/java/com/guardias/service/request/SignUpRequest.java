@@ -1,6 +1,7 @@
-package es.KioskTV.request;
+package com.guardias.service.request;
 
-import es.KioskTV.entity.Role;
+
+import com.guardias.persintence.entity.enums.Roles;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -15,5 +16,5 @@ public class SignUpRequest {
     private String das;
     private String password;
     private String email;
-    private Role role;
+    private Roles role;
 }

@@ -1,4 +1,4 @@
-package es.KioskTV.config;
+package com.guardias.service;
 
 import java.io.IOException;
 
@@ -29,9 +29,9 @@ import lombok.RequiredArgsConstructor;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 	@Autowired
-	private JwtServicio jwtService;
+	private JwtServiceImpl jwtService;
 	@Autowired
-	private UserService userService;
+	private UsuarioService userService;
 
 	/**
 	 * Constructs a JwtAuthenticationFilter with JwtServicio and UserService.
@@ -39,7 +39,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	 * @param jwtService     the service for JWT operations
 	 * @param usuarioService the service for user-related operations
 	 */
-	public JwtAuthenticationFilter(JwtServicio jwtService, UserService usuarioService) {
+	public JwtAuthenticationFilter(JwtServiceImpl jwtService, UsuarioService usuarioService) {
 		this.jwtService = jwtService;
 		this.userService = usuarioService;
 	}

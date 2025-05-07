@@ -1,4 +1,4 @@
-package es.KioskTV.request;
+package com.guardias.service.request;
 
 /**
  * Represents a request for signing in.
@@ -19,7 +19,7 @@ public class SigninRequest {
         this.password = password;
     }
 
-    public String getDas() {
+    public Integer getDas() {
         return das;
     }
 

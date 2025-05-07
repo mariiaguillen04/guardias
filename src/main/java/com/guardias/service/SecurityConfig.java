@@ -1,5 +1,6 @@
-package es.KioskTV.config;
+package com.guardias.service;
 
+import com.guardias.persintence.entity.enums.Roles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +17,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import es.KioskTV.entity.Role;
-import es.KioskTV.serviceImpl.CustomUserDetailsService;
+
 
 /**
  * Configuration class for defining security-related settings.
@@ -59,7 +59,7 @@ public class SecurityConfig {
 						.requestMatchers("/ws/api/news/**").permitAll()
 
 						.requestMatchers(HttpMethod.GET, "/api/users/{id}")
-						.hasAnyAuthority(Role.ROL_USER.toString(), Role.ROL_ADMIN.toString())
+						.hasAnyAuthority(Roles.PROFESOR.toString(), Roles.DIRECTORA.toString())
 						.anyRequest().authenticated())
 				.sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authenticationProvider(authenticationProvider())
