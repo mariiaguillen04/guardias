@@ -33,7 +33,8 @@ public class Usuario {
     @JsonIgnore
     private List<Rol> roles;
 
-    @OneToMany(mappedBy = "usuario" , orphanRemoval = true)
+    @ManyToOne
+    @JoinColumn(name="id_anexo", referencedColumnName = "id", insertable = false, updatable = false)
     private Anexo anexo;
 
     // Relación con tramos: un usuario puede tener varios tramos
