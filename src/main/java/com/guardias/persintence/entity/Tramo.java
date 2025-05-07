@@ -21,9 +21,6 @@ public class Tramo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="id_usuario", insertable = false, updatable = false)
-    private int idUsuario;
-
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(100)")
     private Hora hora;
@@ -42,6 +39,6 @@ public class Tramo {
     private Usuario usuarios;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_falta", referencedColumnName = "id", insertable = false, updatable = false)
+    @JoinColumn(name = "id_falta", referencedColumnName = "id")
     private Falta falta;
 }

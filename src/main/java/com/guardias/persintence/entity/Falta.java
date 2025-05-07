@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-@Table(name="tarea")
+@Table(name="falta")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -17,9 +17,6 @@ public class Falta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
-    @Column(name="id_usuario", insertable = false, updatable = false)
-    private Integer idUsuario;
 
     @Column(columnDefinition = "VARCHAR(200)", nullable = false)
     private LocalDate fecha;

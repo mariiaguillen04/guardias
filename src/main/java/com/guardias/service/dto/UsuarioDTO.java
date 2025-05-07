@@ -18,7 +18,6 @@ public class UsuarioDTO {
     private int id;
     private String nombreUsuario;
     private String email;
-    private List<Rol> rol;
-    private List<Tramo> tramo;
-    private List<Falta> falta;
+    private List<RolDTO> roles;
+
 }

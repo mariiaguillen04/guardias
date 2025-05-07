@@ -1,7 +1,6 @@
 package com.guardias.web.controllers;
 
 import com.guardias.persintence.entity.Rol;
-;
 import com.guardias.service.RolService;
 import com.guardias.service.dto.RolDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +33,10 @@ public class RolController {
     //Recurso para crear un Rol
     @PostMapping
     public ResponseEntity<Rol> createRol(@RequestBody Rol rol){
+        System.out.println("Rol recibido: " + rol);
+        if (rol.getUsuario() != null) {
+            System.out.println("Usuario recibido en rol: " + rol.getUsuario().getId());
+        }
         return ResponseEntity.ok(this.rolService.create(rol));
     }
 

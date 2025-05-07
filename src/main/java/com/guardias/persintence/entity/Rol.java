@@ -1,5 +1,6 @@
 package com.guardias.persintence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.guardias.persintence.entity.enums.Roles;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -21,7 +22,7 @@ public class Rol {
 	@Column(name = "rol", nullable = false)
 	private Roles nombreRol;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "id_usuario", referencedColumnName = "id", insertable = false, updatable = false)
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "id_usuario", referencedColumnName = "id")
 	private Usuario usuario;
 }
