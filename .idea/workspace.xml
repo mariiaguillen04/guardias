@@ -5,9 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cf98237-77ff-412e-9f60-11418823eda3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/RolDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/dto/RolDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/RolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guardias/service/mappers/RolMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/GuardiasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/GuardiasApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Anexo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/Anexo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Dia.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Dia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Hora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Hora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/entity/enums/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/AnexoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/AnexoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/FaltaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/FaltaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/RolRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/RolRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/persintence/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/AnexoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/AnexoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/FaltaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/FaltaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/FaltaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/service/dto/FaltaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/web/controllers/AnexoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/web/controllers/AnexoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/guardias/web/controllers/FaltaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/guardias/web/controllers/FaltaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2025-02-20T17-45-34_061.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.guardias.GuardiasApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.guardias.GuardiasApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.guardias.GuardiasApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.guardias.GuardiasApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/guardias/GuardiasApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/guardias/GuardiasApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
